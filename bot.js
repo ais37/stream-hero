@@ -4,6 +4,7 @@ const fs = require("fs");
 const cheerio = require('cheerio');
 const snekfetch = require('snekfetch');
 const querystring = require('querystring');
+bot = new Discord.Client({sisableEveryone: true})
 
 
 bot.on("ready", () => {
@@ -119,15 +120,12 @@ bot.on('message', message => {
 });
 
 bot.on('guildMemberAdd', member => {
-  
-  const channel = member.guild.channels.find(ch => ch.id === '534356556624560136');
- 
-  if (!channel) return;
-
-  channel.send(`**Welcome To Future.**`);
+const mohamed= member.guild.channels.get("482163085809942529");
+if(!mohamed) return;
+if(mohamed) {
+setTimeout(() => mohamed.send('**Welcome To Future.**'), 4000)
+}
 });
-
-
 
 bot.login(process.env.BOT_TOKEN);
 
