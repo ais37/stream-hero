@@ -4,7 +4,7 @@ const fs = require("fs");
 const cheerio = require('cheerio');
 const snekfetch = require('snekfetch');
 const querystring = require('querystring');
-bot = new Discord.Client({sisableEveryone: true})
+const bot = new Discord.Client({sisableEveryone: true})
 
 
 bot.on("ready", () => {
