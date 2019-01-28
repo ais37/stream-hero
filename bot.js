@@ -118,6 +118,16 @@ bot.on('message', message => {
 		  
 });
 
+client.on('guildMemberAdd', member => {
+  
+  const channel = member.guild.channels.find(ch => ch.id === '534356556624560136');
+ 
+  if (!channel) return;
+
+  channel.send(`**Welcome To Future.**`);
+});
+
+
 
 bot.login(process.env.BOT_TOKEN);
 
