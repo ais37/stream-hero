@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+534356556624560136534356556624560136534356556624560136const Discord = require("discord.js");
 const bot = new Discord.Client({autoReconnect:true});
 const fs = require("fs");
 const cheerio = require('cheerio');
@@ -120,7 +120,7 @@ bot.on('message', message => {
 });
 
 bot.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("482163085809942529");
+const mohamed= member.guild.channels.get("534356556624560136");
 if(!mohamed) return;
 if(mohamed) {
 setTimeout(() => mohamed.send('**Welcome To Future.**'), 4000)
