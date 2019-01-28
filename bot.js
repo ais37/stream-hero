@@ -118,7 +118,7 @@ bot.on('message', message => {
 		  
 });
 
-client.on('guildMemberAdd', member => {
+bot.on('guildMemberAdd', member => {
   
   const channel = member.guild.channels.find(ch => ch.id === '534356556624560136');
  
