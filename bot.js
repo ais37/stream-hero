@@ -118,13 +118,6 @@ bot.on('message', message => {
 		  
 });
 
-bot.on('guildMemberAdd', member => {
-const mohamed= member.guild.channels.get("534356556624560136");
-if(!mohamed) return;
-if(mohamed) {
-setTimeout(() => mohamed.send('**Welcome To Future.**'), 4000)
-}
-});
 
 bot.login(process.env.BOT_TOKEN);
 
