@@ -163,4 +163,11 @@ shadow.user.setAvatar(argresult);
   message.channel.sendMessage(`تم`).then(message => {message.delete(3000)});
     }
   });
+shadow.on('guildMemberAdd', member => {
+const xx= member.guild.channels.get("534356556624560136");
+if(!xx) return;
+if(xx) {
+setTimeout(() => xx.send('**Welcome to Future.**'), 6000)
+}
+});
 shadow.login(process.env.BOT_TOKEN);
