@@ -170,7 +170,7 @@ if(xx) {
 setTimeout(() => xx.send('**Welcome to Future.**'), 6000)
 }
 });
-client.on('message', message => {
+shadow.on('message', message => {
   if (!message.guild) return;
 
   if (message.content === 'heroxx2') {
